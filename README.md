@@ -56,7 +56,7 @@ Practice by running the following calls in order within the console:
 `(contract-call? .balances get-total-transfers)`<br><br>
 `(contract-call? .balances transfer u100000000000000 '<principal>)`<br><br>
 `(contract-call? .balances get-total-transfers)`<br><br>
-`(contract-call? .balances transfer u1000 '<principal>)`<br><br>
+`(contract-call? .balances transfer u500 '<principal>)`<br><br>
 `(contract-call? .balances get-total-transfers)`<br><br>
 
 What do you notice?
