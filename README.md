@@ -1,6 +1,6 @@
 ## Clarity Camp Concepts and Contract Calls Assignment
 
-You've learned about `types`, `storing data`, `functions` & `control flow`, and how to make contract calls within `clarinet console`. <br>
+You've learned about `types`, `storing data`, `functions` & `control flow`, and how to make contract calls within `clarinet console`. <br><br>
 Now it's time to get some hands on practice!
 
 ### Learning Goals
@@ -36,7 +36,8 @@ Now let's practice working within the console.
 In your terminal, run `clarinet check`
 
 You should get a passing check.<br>
-*Note: You may get an unchecked data warning. If so, add this comment above your `transfer` function. `;; #[allow(unchecked_data)]`*
+*Note: You may get an unchecked data warning. If so, add this comment above your `transfer` function: <br>
+`;; #[allow(unchecked_data)]`*
 
 Now run `clarinet console`<br>
 *Note: you can run `::help` in the console at any time to view the available commands.*
