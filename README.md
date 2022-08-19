@@ -27,7 +27,8 @@ Now it's time to get some hands on practice!
   
 #### Challenge!
 
-If your `transfer` function has a repeated expression. How could you clean this up?
+If your `transfer` function has a repeated expression, how could you clean it up?<br>
+*Hint: Think about the function types available to you.*
 
 ### Contract Calls
 
