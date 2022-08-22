@@ -45,7 +45,7 @@ The contract call looks like this: `(contract-call? .balances transfer <amount> 
 ---
 
 As a user, I should be able to view the total transfers made.
-- [ ] Write a function called `get-total-transfers` that takes no paraments and retrieves the value of `totalTransfers`. <br>
+- [ ] Write a function called `get-total-transfers` that takes no parameters and retrieves the value of `totalTransfers`. <br>
 The contract call looks like this: `(contract-call? .balances get-total-transfers)`
   
 ### Challenge! :muscle:
