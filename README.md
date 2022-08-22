@@ -1,36 +1,59 @@
-## Clarity Camp Concepts and Contract Calls Assignment
+# Clarity Camp Concepts and Contract Calls Assignment
 
 You've learned about `types`, `storing data`, `functions` & `control flow`, and how to make contract calls within `clarinet console`. <br><br>
-Now it's time to get some hands on practice!
+Now it's time to get some hands on practice! :bowtie:
 
-### Learning Goals
+## Learning Goals :bulb:
 
 - store data using `data members` and the correct `type signatures`
 - write `functions` and use `control flow functions` as part of your expressions
 - hop into `clarinet console` and practice making contract calls and using some handy commands
 
-### Tasks
+## Tasks :white_check_mark:
 
-- `balances.clar` has been created for you.<br><br>
-  - write a `constant` called `CALLER` that represents the keyword `tx-sender`.<br><br>
-  - write a `variable` called `totalTransfers` and initiate it as `u0`.<br><br>
-  - write a `map` called `balances` to store a `principal` and corresponding balance.<br>
-  *Hint: maps store data in key value pairs. Balances will always be a positive number.*<br><br>
-  - write a function called `get-balance` that will retreive the data from the `balances map`. <br>
-  *Hint: What type of function should this be? Can a built-in function expression help here? Will any parameters be needed?*<br><br>
-  - write a function called `get-total-transfers` that will retreive the value of `totalTransfers`.<br><br>
-  - write a function called `transfer` that will be responsible for a few things:<br><br>
-  1. update the value of totalTransfers to increment by one. Go ahead and make this the first expression, this will help demonstrate how the control flow can be affected by `control-flow functions`.<br><br>
-  2. transfer the specified amount of STX from the sender to the specified recipient.<br><br>
-  3. update the `balances` map for both the sender and recipient with the post-transfer balance.<br>
-  *Hint: What type of function should this be? What parameters will you need from the caller? Check responses! Don't forget your `constant`.*
+`balances.clar` has been created for you. You will write your code in this file. <br><br>
+
+- [ ] write a `constant` called `CALLER` that represents the keyword `tx-sender`.
+
+---
+
+- [ ] write a `variable` called `totalTransfers` and initiate it as `u0`.
+
+---
+ 
+- [ ] write a `map` called `balances` to store a `principal` and corresponding balance.
+
+*Hint: Maps store data in key value pairs. Balances will always be a positive number.*
+
+---
+
+As a user, I should be able to view an account’s stx balance.
+- [ ] Write a function called `get-balance` that takes a single parameter of the principal whose account balance you want to find. <br>
+The contract call looks like this: `(contract-call? .balances get-balance <principal>)`
+
+*Hint: What type of function should this be? Can a built-in function expression help here? Will any parameters be needed?*
+
+---
+
+As a user, I should be able to transfer some stx to another account.
+- [ ] Write a function called `transfer` that takes parameters of an amount you want to transfer and the principal who you are transferring that amount to.
+This function should increment the value to `totalTransfers` and update the `balances` map to reflect the correct balance post-transfer for both the sender and the recipient. <br>
+The contract call looks like this: `(contract-call? .balances transfer <amount> <principal>)`
+
+*Hint: What type of function should this be? What parameters will you need from the caller? Check responses! Don't forget your constant.*
+
+---
+
+As a user, I should be able to view the total transfers made.
+- [ ] Write a function called `get-total-transfers` that takes no paraments and retrieves the value of `totalTransfers`. <br>
+The contract call looks like this: `(contract-call? .balances get-total-transfers)`
   
-#### Challenge!
+### Challenge! :muscle:
 
-If your `transfer` function has a repeated expression, how could you clean it up?<br>
+Take a look at your `transfer` function. Does it have a repeated expression? How could you clean this up?<br>
 *Hint: Think about the function types available to you.*
 
-### Contract Calls
+## Contract Calls :telephone:
 
 Now let's practice working within the console.
 
