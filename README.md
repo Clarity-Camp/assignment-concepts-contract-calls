@@ -50,7 +50,7 @@ The contract call looks like this: `(contract-call? .balances get-total-transfer
   
 ### Challenge! :muscle:
 
-Take a look at your `transfer` function. Does it have a repeated expression? How could you clean this up?<br>
+ - [ ] Take a look at your `transfer` function. Does it have a repeated expression? How could you clean this up?<br>
 *Hint: Think about the function types available to you.*
 
 ## Contract Calls :telephone:
